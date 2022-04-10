@@ -1,0 +1,11 @@
+header{
+    background: #0d47a1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 950px) {
+    header{
+        justify-content: flex-start;
+    }
+  }

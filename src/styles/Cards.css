@@ -1,0 +1,102 @@
+.cards{
+    background: white;
+    width: 90%;
+    padding: 20px;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+.cards .hotelImage{
+    width: 100%;
+    
+}
+.cards .icons{
+    width: 20px;
+}
+.cards h2{
+    color: #0d47a1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cards .border{
+    border-bottom: 3px dashed #a0a0a0;
+}
+.cards button{
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #0d47a1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cards p{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.cards .tex1{
+    font-size: 1.2rem;
+    color: #817e7e;
+    font-weight: bold;
+}
+.price{
+    color: #ff9800;
+    font-size: 2rem;
+}
+.price span{
+    font-weight: bold;
+}
+.main_content_card{
+    grid-column: 1/5;
+}
+.price_button{
+    text-align: center;
+
+}
+.container_inputs_star{
+    margin: 5px 0;
+}
+.notfound{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 5rem;
+    color: #ada7a7;
+    font-weight: bold;
+}
+@media (min-width: 950px) {
+    .main_content_card {
+        grid-column: 2 / 5;
+    }
+}
+@media (min-width: 1300px) {
+    .main_content_card{
+        width: 100%;
+        grid-column: 2 / 5;
+        grid-row: 1;
+    }
+    .cards{
+        flex-direction: row;
+        margin:20px 0 ;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .border{
+        border-bottom: none !important;
+    }
+    .title_stars{
+        width: 100%;
+        padding-left: 30px;
+    }
+    .price_button{
+        border-left: 3px dashed #a0a0a0;
+        padding-left: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,18 @@
+.Admin_button{
+    width: 250px;
+    padding: 10px;
+    background: #0d47a1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.container_home{
+    align-items:center;
+    display:flex; 
+    flex-direction:column ;
+    justify-content:center;
+}

@@ -1,0 +1,116 @@
+.container{
+    width: 90%;
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    box-shadow: -1px 10px 18px 1px rgb(0 0 0 / 42%);
+    flex-direction: column;
+}
+.container img{
+    width: 30px;
+}
+.container p{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.openFilter{
+    color: #0d47a1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.openFilter >div{
+    display: flex;
+    padding: 10px;
+}
+.openFilter #open__checkbox{
+    height: 38px;
+    width: 50px;
+    position: absolute;
+     appearance: none;
+}
+.filter_form {
+    display: none;
+    border-top: 1px solid black;
+    color: black;
+}
+.header_filter{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 20px;
+}
+.input_hotel{
+    border: none;
+    border-bottom: 1px solid;
+    margin-left: 15px;
+    font-size: 1.3rem;
+}
+input[type="checkbox"]:checked ~ .filter_form{
+    display: block;
+    transition: ease-in;
+
+}
+.stars_inputs{
+    width: 20px;
+    height: 20px;
+
+}
+.name_filter h2{
+    display: none;
+
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.name_filter{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/5;
+}
+.Stars .container_inputs_star label{
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+@media (min-width: 950px) {
+    .main-content{
+        display: grid;
+    }
+    .filter_responsive {
+        display: none !important;
+    }
+    .filter_form{
+        border: none;
+        display: block;
+    }
+    .container{
+         width: 400px; 
+        height: auto;
+        margin: 0 20px 20px 20px;
+    }
+    .name_filter{
+        grid-column:1/2;
+        display: flex;
+        flex-direction: column;
+    }
+    .name_filter h2{
+        display: block;
+        margin: 20px 20px 10px 20px;
+        font-size: 1.8rem;
+        color: #ada7a7;
+    }
+    .header_filter:nth-child(2) {
+        padding: 60px 0;
+        
+    }
+    .Stars{
+        padding: 60px 0;
+
+    }
+  }
