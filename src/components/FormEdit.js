@@ -39,7 +39,7 @@ const FormEdit = ({hotels, setHotels}) => {
   const handleSubmit =(e)=>{
     e.preventDefault();
     try{
-      fetch("http://localhost:4000/results/" + localHotel.id ,{
+      fetch("https://aviantur.herokuapp.com/results/" + localHotel.id ,{
        method: 'PUT',
        body:JSON.stringify(myHotels),
        headers:{
@@ -54,7 +54,7 @@ const FormEdit = ({hotels, setHotels}) => {
         timer: 2500,
       });
       setTimeout(()=>{
-        fetch("http://localhost:4000/results")
+        fetch("https://aviantur.herokuapp.com/results")
         .then(resp => resp.json())
         .then(data => setHotels(
             data

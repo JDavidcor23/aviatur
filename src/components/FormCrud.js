@@ -54,7 +54,7 @@ const FormCrud = ({setHotels }) => {
     const handleSubmit =(e)=>{
     e.preventDefault();
     try {
-      fetch("http://localhost:4000/results",{
+      fetch("https://aviantur.herokuapp.com/results",{
           method:"POST",
           body:JSON.stringify(myHotels),
           headers:{
@@ -69,7 +69,7 @@ const FormCrud = ({setHotels }) => {
           showConfirmButton: false,
           timer: 2500,
         });
-          fetch("http://localhost:4000/results")
+          fetch("https://aviantur.herokuapp.com/results")
           .then(resp => resp.json())
           .then(data => setHotels(
               data

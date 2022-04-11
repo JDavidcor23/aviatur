@@ -6,7 +6,7 @@ import Edit from '../pages/Edit'
 function AppRouter() {
   const [hotels, setHotels] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/results")
+    fetch("https://aviantur.herokuapp.com/results")
     .then(resp => resp.json())
     .then(data => setHotels(data))
   }, []);

@@ -16,7 +16,7 @@ const CardsCrud = ({ hotels, setHotels }) => {
     return stars
  }
   const handleDelete = (id) =>{
-    fetch("http://localhost:4000/results/"+ id,{
+    fetch("https://aviantur.herokuapp.com/results/"+ id,{
       method:'DELETE'
     })
     const newsHotels = hotels.filter(hotel => hotel.id !== id)
