@@ -27,7 +27,13 @@ const Cards = ({filterHotels, numberStar, hotels}) => {
       :
       HotelsInput.map(h => (
         <div className="cards" key={h.id}>
-          <img src={`/assets/images/hotels/${h.image}`} alt="image_hotel" className="hotel" />
+          <img 
+            src={`/assets/images/hotels/${h.image}`} alt="image_hotel" className="hotel" 
+            onError={({ currentTarget }) => {
+              currentTarget.onerror = null;
+              currentTarget.src=h.image;
+            }}
+            />
           <div className="title_stars">
           <h2>{h.name}</h2>
           <div>

@@ -1,0 +1,15 @@
+#form_edit{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    padding: 20px;
+    grid-column: 1/5;
+    margin-top: 20px;
+    background: white;
+    box-shadow: -1px 10px 18px 1px rgb(0 0 0 / 42%);
+}
+#form_crud input{
+    margin: 20px 0;
+}
