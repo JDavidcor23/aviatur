@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { fileUpload } from "../helpers/FileUpload";
 import Multiselect from "multiselect-react-dropdown";
 import Swal from "sweetalert2";
-
+import { url } from '../helpers/url';
+import {thisAmenities} from '../helpers/amenities'
+import {getData} from '../helpers/getData'
 const FormCrud = ({setHotels }) => {
     const [myHotels, setMyHotels] = useState({
         name: "",
@@ -11,25 +13,7 @@ const FormCrud = ({setHotels }) => {
         image:
           "https://res.cloudinary.com/dhu6ga6hl/image/upload/v1646187218/work-now/hqlsfanpvurxithbtvmy.png",
     });
-    const thisAmenities = [
-        "bathrobes",
-        "bathtub",
-        "beach",
-        "beach-pool-facilities",
-        "business-center",
-        "children-club",
-        "coffe-maker",
-        "deep-soaking-bathtub",
-        "fitness-center",
-        "garden",
-        "kitchen-facilities",
-        "newspaper",
-        "nightclub",
-        "restaurant",
-        "safety-box",
-        "separate-bredroom",
-        "sheets",
-    ];
+
     const handlePictureClick = () => {
     document.querySelector("#fileSelector1").click();
     };
@@ -54,7 +38,7 @@ const FormCrud = ({setHotels }) => {
     const handleSubmit =(e)=>{
     e.preventDefault();
     try {
-      fetch("https://aviantur.herokuapp.com/results",{
+      fetch(url,{
           method:"POST",
           body:JSON.stringify(myHotels),
           headers:{
@@ -69,12 +53,9 @@ const FormCrud = ({setHotels }) => {
           showConfirmButton: false,
           timer: 2500,
         });
-          fetch("https://aviantur.herokuapp.com/results")
-          .then(resp => resp.json())
-          .then(data => setHotels(
-              data
-          ))
-      },1000)
+        getData(url)
+        .then(data => setHotels(data))
+      },500)
 
       e.target.reset()
       

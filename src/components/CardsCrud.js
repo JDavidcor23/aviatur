@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/HotelsCrud.css";
 import {Link} from "react-router-dom";
+import { url } from '../helpers/url';
 const CardsCrud = ({ hotels, setHotels }) => {
   const getStar = (number, id) =>{
     let stars = []
@@ -16,11 +17,15 @@ const CardsCrud = ({ hotels, setHotels }) => {
     return stars
  }
   const handleDelete = (id) =>{
-    fetch("https://aviantur.herokuapp.com/results/"+ id,{
-      method:'DELETE'
-    })
-    const newsHotels = hotels.filter(hotel => hotel.id !== id)
-    setHotels(newsHotels)
+    try{
+      fetch(url + id,{
+        method:'DELETE'
+      })
+      const newsHotels = hotels.filter(hotel => hotel.id !== id)
+      setHotels(newsHotels)
+    }catch(error){
+      console.log(error)
+    }
   }
   const saveLocalStorage =(hotel) =>{
     localStorage.setItem("hotel", JSON.stringify(hotel))

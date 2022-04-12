@@ -2,27 +2,12 @@ import React, {useState} from 'react';
 import Swal from "sweetalert2";
 import { useNavigate } from 'react-router-dom';
 import Multiselect from "multiselect-react-dropdown";
-const FormEdit = ({hotels, setHotels}) => {
+import { url } from '../helpers/url';
+import {thisAmenities} from '../helpers/amenities'
+import {getData} from '../helpers/getData'
+
+const FormEdit = ({setHotels}) => {
   const localHotel = JSON.parse(localStorage.getItem("hotel"))
-  const thisAmenities = [
-      "bathrobes",
-      "bathtub",
-      "beach",
-      "beach-pool-facilities",
-      "business-center",
-      "children-club",
-      "coffe-maker",
-      "deep-soaking-bathtub",
-      "fitness-center",
-      "garden",
-      "kitchen-facilities",
-      "newspaper",
-      "nightclub",
-      "restaurant",
-      "safety-box",
-      "separate-bredroom",
-      "sheets",
-  ];
   const navigate = useNavigate()
   const [myHotels, setMyHotels]=useState({
       name: localHotel.name,
@@ -39,7 +24,7 @@ const FormEdit = ({hotels, setHotels}) => {
   const handleSubmit =(e)=>{
     e.preventDefault();
     try{
-      fetch("https://aviantur.herokuapp.com/results/" + localHotel.id ,{
+      fetch(url + localHotel.id ,{
        method: 'PUT',
        body:JSON.stringify(myHotels),
        headers:{
@@ -54,8 +39,7 @@ const FormEdit = ({hotels, setHotels}) => {
         timer: 2500,
       });
       setTimeout(()=>{
-        fetch("https://aviantur.herokuapp.com/results")
-        .then(resp => resp.json())
+        getData(url)
         .then(data => setHotels(
             data
         ))
