@@ -11,6 +11,9 @@
 #form_crud input{
     margin: 20px 0;
 }
+.prev_img{
+    width: 100%;
+}
 .title_crud{
     text-align: center;
     margin-top: 20px;
@@ -57,12 +60,17 @@
     justify-content:center;
 }
 @media (min-width: 950px) {
+    .prev_img{
+        width: 200px;
+        height: 200px;
+    }
     #form_crud{
-    grid-column:1/2;
-    height: 700px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px; 
+        align-items: center;
+        grid-column:1/2;
+        height: 950px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px; 
     }
 }
 @media (min-width: 1300px) {

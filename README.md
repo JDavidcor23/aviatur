@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+#Backend
+El examen está compuesto por dos aplicaciones, un backend escrito en NodeJS el cual
+expondrá una API REST para la interacción con la aplicación frontend.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Repositorio del backend: https://github.com/JDavidcor23/backend_aviatur
 
-## Available Scripts
+Link de despliegue:
+https://aviaturbackend.herokuapp.com/
 
-In the project directory, you can run:
+[========]
 
-### `npm start`
+#  Frontend
+Maquetar una página de resultado de hoteles, ver imágenes en el repo (solo mobile y
+desktop). Consumir la API desarrollada en el ejercicio anterior, implementando las
+funcionalidades necesarias para listar y filtrar los hoteles.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![desktop](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649780294/dewehrjurxvzkpvg2ahy.png "desktop")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649780294/dewehrjurxvzkpvg2ahy.png "desktop")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![mobile](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649780292/jqb35yyy9mtrxzzvyqfg.png "mobile")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649780292/jqb35yyy9mtrxzzvyqfg.png "mobile")
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[========]
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 1. Utilizar alguna librería o framework guiado por componentes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para el desarrollo del proyecto se utilizo la libreria **Reactjs**
 
-### `npm run eject`
+[========]
+#### 2. Utilizar algún package manager (npm, bower) para manejar dependencias externas.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Gestor de paquetes **Node Package Manager (NPM)**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[========]
+#### 3. Utilizar una grilla responsive o similar para el maquetado.
+[![html](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649777554/bydab4ucrapb9qqkbpsj.png "html")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649777554/bydab4ucrapb9qqkbpsj.png "html")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[![css](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649777555/wurxx8co1ornxxjw063c.png "css")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649777555/wurxx8co1ornxxjw063c.png "css")
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[========]
+#### 4. Optimizar todos los recursos para entornos productivos, (minificar, ofuscar, etc).
 
-## Learn More
+[![build comand](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649777993/dvipdtmvzuvjhyejjljj.png "build comand")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649777993/dvipdtmvzuvjhyejjljj.png "build comand")
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![file](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649778069/kjssnu359dnxtc68pkmg.png "file")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649778069/kjssnu359dnxtc68pkmg.png "file")
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 5. Implementar el CRUD de hoteles (solo a nivel API).
+[![crud](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649780504/qidevhot45a39430lop1.png "crud")](https://res.cloudinary.com/dhu6ga6hl/image/upload/v1649780504/qidevhot45a39430lop1.png "crud")

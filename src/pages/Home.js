@@ -4,12 +4,11 @@ import {Link} from "react-router-dom";
 import "../styles/Home.css"
 const Home = ({hotels}) => {
     return (
-        <div  className="container_home">
-            <Link to="/hoteles">
+        <div  className="main-content">
+            <Link to="/hoteles" className="link">
                 <button className='Admin_button'>Administrar hoteles</button>
             </Link>
             <Filter hotels={hotels}/>
-            
         </div>
     );
 };

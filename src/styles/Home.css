@@ -1,3 +1,9 @@
+.link{
+    grid-column: 1/5;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
 .Admin_button{
     width: 250px;
     padding: 10px;
@@ -8,10 +14,4 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
-}
-.container_home{
-    align-items:center;
-    display:flex; 
-    flex-direction:column ;
-    justify-content:center;
 }

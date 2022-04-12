@@ -19,7 +19,7 @@ const Filter = ({hotels}) => {
     setNumberStar(event.target.value)
  }
   return (
-    <div className="main-content">
+    <>
       <div  className="name_filter">
         <h2>Filtros</h2>
         <div className="container">
@@ -49,6 +49,7 @@ const Filter = ({hotels}) => {
                     value={filterHotels}
                     onChange={handleSearch}
                     className="input_hotel"
+                    style={{width: "85%"}}
                     />
               </div>
               <div className="header_filter">
@@ -117,7 +118,7 @@ const Filter = ({hotels}) => {
         </div>
     </div>
     <Cards filterHotels={filterHotels} numberStar={numberStar} hotels={hotels}/>
-    </div>
+    </>
   );
 };
 
